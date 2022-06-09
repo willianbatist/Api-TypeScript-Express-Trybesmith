@@ -13,6 +13,10 @@ class ProductService {
     const books = await this.model.getAll();
     return books;
   }
+
+  public create(book: Product): Promise<Product> {
+    return this.model.create(book);
+  }
 }
 
 export default ProductService;
