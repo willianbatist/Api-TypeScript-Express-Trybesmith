@@ -1,5 +1,5 @@
 import { Pool, ResultSetHeader } from 'mysql2/promise';
-import Product from '../interfaces/product';
+import { Product, ProductId } from '../interfaces/product';
 
 export default class ProductModel {
   public connection: Pool;
@@ -24,5 +24,11 @@ export default class ProductModel {
     const [dataInserted] = result;
     const { insertId } = dataInserted;
     return { id: insertId, ...product };
+  }
+
+  async getProductId(id:number):Promise<ProductId[]> {
+    const query = 'SELECT group_concat(id) as productsIds FROM Trybesmith.Products where orderId=?';
+    const [result] = await this.connection.execute(query, [id]);
+    return result as [ProductId];
   }
 }
