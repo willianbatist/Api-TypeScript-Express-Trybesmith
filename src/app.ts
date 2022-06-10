@@ -2,6 +2,12 @@ import express from 'express';
 import ProductsController from './controllers/product.controller';
 import UsersController from './controllers/user.controller';
 import { validationProductName, validationProductAmount } from './middlewares/product.middleware';
+import {
+  validationUsername,
+  validationClasse,
+  validationLevel,
+  validationPassword,
+} from './middlewares/user.middleware';
 
 const app = express();
 const productsController = new ProductsController();
@@ -18,6 +24,13 @@ app.post(
   productsController.create,
 );
 
-app.post('/users', usersController.create);
+app.post(
+  '/users',
+  validationUsername,
+  validationClasse,
+  validationLevel,
+  validationPassword,
+  usersController.create,
+);
 
 export default app;
