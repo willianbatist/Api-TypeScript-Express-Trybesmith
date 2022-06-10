@@ -1,6 +1,7 @@
 import express from 'express';
 import ProductsController from './controllers/product.controller';
 import UsersController from './controllers/user.controller';
+import OrderController from './controllers/order.controller';
 import { validationProductName, validationProductAmount } from './middlewares/product.middleware';
 import {
   validationUsername,
@@ -12,6 +13,7 @@ import {
 const app = express();
 const productsController = new ProductsController();
 const usersController = new UsersController();
+const orderController = new OrderController();
 
 app.use(express.json());
 
@@ -32,5 +34,7 @@ app.post(
   validationPassword,
   usersController.create,
 );
+
+app.get('/orders', orderController.getAll);
 
 export default app;
