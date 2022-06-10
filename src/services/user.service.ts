@@ -1,6 +1,7 @@
 import connection from '../models/connection';
 import UserModel from '../models/user.model';
 import User from '../interfaces/user';
+import generateJWT from '../utils/generateJWT';
 
 export default class UserService {
   public model: UserModel;
@@ -9,7 +10,8 @@ export default class UserService {
     this.model = new UserModel(connection);
   }
 
-  public create(user: User): Promise<User> {
-    return this.model.create(user);
+  async create(user: Omit<User, 'id'>) {
+    const result = await this.model.create(user);
+    return generateJWT(result);
   }
 }
