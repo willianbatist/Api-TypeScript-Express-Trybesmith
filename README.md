@@ -28,7 +28,7 @@ O Projeto TrybeSmith é uma API de uma pequena loja que possui informações dos
 
 ### Inicialização
 
-  Com o docker compose já criado, a primeira forma de fazer funcionar o projeto é utilizando-o da seguinte forma: com o docker-compose up -d, serão criados dois container, o mysql que rodará na porta 3306, e o segundo onde rodará o projeto. Agora, basta digitar docker exec -it trybesmith bash, onde irá entrar no container do projeto, sendo assim só instalar as dependências com npm install e por fim rodar com npm start.
+  Com o docker compose já criado, a primeira forma de fazer funcionar o projeto é utilizando-o da seguinte forma: com o **docker-compose up -d**, serão criados dois container, o mysql que rodará na porta 3306, e o segundo onde rodará o projeto. Agora, basta digitar **docker exec -it trybesmith bash**, onde irá entrar no container do projeto, sendo assim só instalar as dependências com **npm install** e por fim rodar com **npm start**.
 
 ### Visão Geral
 
