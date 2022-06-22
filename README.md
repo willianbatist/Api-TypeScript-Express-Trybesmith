@@ -23,7 +23,7 @@ Este repositório contem o **Projeto API Order TrybeSmith** que reúne o aprendi
 
 ### Introdução
 
-O Projeto TrybeSmith é uma API de uma pequena loja que possui informações dos usuários, dos produtos e dos pedidos feitos pelos usuários. O objetivo dessa aplicação é praticar o desenvolvimento de API com TypeScript, respeitando as camadas model, controller e service.
+O Projeto TrybeSmith é uma API de uma loja de produtos medievais que possui informações dos usuários, dos produtos e dos pedidos feitos pelos usuários. O objetivo dessa aplicação é praticar o desenvolvimento de API com TypeScript, respeitando as camadas model, controller e service.
 
 
 ### Inicialização
