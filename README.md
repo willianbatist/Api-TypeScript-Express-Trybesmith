@@ -10,12 +10,17 @@ Este repositório contem o **Projeto API Order TrybeSmith** que reúne o aprendi
 
   - Desenvolvimento de API em TypeScript;
   - Declarar variáveis e funções com tipagens Typescript;
-  - Utilizar Express;
   - Operações basicas no bando de dados: Create, Read, Update e Delete;
-  - Utilizar o Docker;
-  - Utilizar SQL;
-  - Utilizar o MySql;
-  - Utilizar JsonWebToken.
+
+#### Tecnologias utilizadas:
+
+  - TypeScript;
+  - Express;
+  - Docker;
+  - SQL;
+  - MySql;
+  - Eslint;
+  - JsonWebToken.
 
 ---
 
