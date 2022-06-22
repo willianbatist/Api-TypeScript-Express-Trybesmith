@@ -9,6 +9,7 @@ Este repositório contem o **Projeto API Order TrybeSmith** que reúne o aprendi
 #### Habilidades que foram exigidas:
 
   - Desenvolvimento de API em TypeScript;
+  - Declarar variáveis e funções com tipagens Typescript;
   - Utilizar Express;
   - Operações basicas no bando de dados: Create, Read, Update e Delete;
   - Utilizar o Docker;
