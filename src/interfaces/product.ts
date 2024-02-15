@@ -5,3 +5,4 @@ export interface Product {
   orderId?: number;
 }
 
+export type ProductId = { productsIds: string };
